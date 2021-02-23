@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Optima, sans-serif;
+}
+
+header {
+	/* Configuração de fundo */
+
+	height: 200px;
+	width: 100%;
+}
+
+body {
+	background-color: white;
+
+}
+
+section{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 66%;
+	height: auto;
+	border: 10px solid #7bdda4;
+}
+
+footer{
+	width: 100%;
+	height: 80px;
+   	text-align: center;
+   	background-color: #F5FFFA;
+   	padding: 15px;
+
+}
+
+#TituloReceita{
+	color: black;
+	text-align: left;
+	margin: 3%;
+}
+
+#Descricao{
+	color: black;
+	text-align: left;
+	margin: 3%;
+}
+
+#Ingredientes{
+	color: black;
+	text-align: left;
+	margin: 3%;
+}
+
+#Preparo{
+	color: black;
+	text-align: left;
+	margin: 3%;
+}
+
+#listaIngredientes{
+	margin-left: 7%;
+}
+
+#Passos{
+	margin-left: 7%;
+	text-align: justify-all;
+}
+
+#bar {
+	height: 25px;
+	width: 100%;
+	background-color: #7bdda4;
+}
+
+#titulo {
+	/*Configuração de fonte */
+
+	position: relative;
+   	top: 50%;
+   	transform: translateY(-50%);
+   	text-align: center;
+	color: #ea759e;
+	font-size: 60px;
+	font-family: Optima, sans-serif;
+}
+
+#sub {
+   text-align: center;
+	color: #ea759e;
+	font-size: 40px;
+	font-family: Optima, sans-serif;
+}
+
+.FotoReceita{
+	position: relative;
+
+}
+
+.container {
+  margin: 50px auto;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+img:nth-child(1) {
+  animation-delay: 12s;
+}
+ 
+img:nth-child(2) {
+  animation-delay: 8s;
+}
+ 
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+ 
+img:nth-child(4) {
+  animation-delay: 0s;
+}
+
+#menu-h{
+    background-color: white;
+    margin-top: 5%;
+}
+
+#menu-h ul {
+    width: 100%;
+    list-style: none;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #7bdda4;
+}
+
