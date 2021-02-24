@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Optima, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Optima, sans-serif;
 }
 
 header {
@@ -30,10 +28,26 @@ section{
 footer{
 	width: 100%;
 	height: 80px;
-   	text-align: center;
-   	background-color: #F5FFFA;
-   	padding: 15px;
+  text-align: center;
+  background-color: #F5FFFA;
+  padding: 15px;
 
+}
+
+#p1{
+  text-align: justify;
+  padding: 3%;
+  font-size: 20px;
+}
+
+#p2{
+  text-align: center;
+}
+
+#Historia{
+  height: auto;
+  width: 60%;
+  position: relative;
 }
 
 #TituloReceita{
@@ -69,29 +83,34 @@ footer{
 	text-align: justify-all;
 }
 
-#bar {
-	height: 25px;
-	width: 100%;
-	background-color: #7bdda4;
+#esquerdo{
+  width: 50%;
+  height: 55px;
+  margin: 0px auto;
+}
+#direito{
+  width: 50%;
+  height: 55px;
+  margin: 0px;
 }
 
 #titulo {
 	/*Configuração de fonte */
 
 	position: relative;
-   	top: 50%;
-   	transform: translateY(-50%);
-   	text-align: center;
-	color: #ea759e;
-	font-size: 60px;
-	font-family: Optima, sans-serif;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ea759e;
+  font-size: 60px;
+  font-family: Optima, sans-serif;
 }
 
 #sub {
-   text-align: center;
-	color: #ea759e;
-	font-size: 40px;
-	font-family: Optima, sans-serif;
+ text-align: center;
+ color: #ea759e;
+ font-size: 40px;
+ font-family: Optima, sans-serif;
 }
 
 .FotoReceita{
@@ -100,41 +119,41 @@ footer{
 }
 
 form {
-    margin: 0 auto;
-    width: 30%;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+  margin: 0 auto;
+  width: 30%;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
 }
 
 form div + div {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 label {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
 
 input, textarea {
-    font: 1em sans-serif;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #999;
+  font: 1em sans-serif;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
 }
 
 textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: vertical;
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
 }
 
 
 button {
-    width: 100%;
-    height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
 .container {
@@ -163,42 +182,46 @@ button {
 img:nth-child(1) {
   animation-delay: 12s;
 }
- 
+
 img:nth-child(2) {
   animation-delay: 8s;
 }
- 
+
 img:nth-child(3) {
   animation-delay: 4s;
 }
- 
+
 img:nth-child(4) {
   animation-delay: 0s;
 }
 
 #menu-h{
-    background-color: white;
-    margin-top: 5%;
+  background-color: #7bdda4;
 }
 
 #menu-h ul {
-    width: 100%;
-    list-style: none;
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
 }
 
 #menu-h ul li {
-    display: inline;
+  display: inline;
 }
 
 #menu-h ul li a {
-    width: 33%;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    transition: background .4s;
+  color: #FFF;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background .4s;
+  width: 49.83%;
+  text-align: center;
+  font-size: 20px;
 }
 
 #menu-h ul li a:hover {
-    background-color: #7bdda4;
+  background-color: white;
+  color: #ea759e;
+  font-size: 20px;
 }
-
