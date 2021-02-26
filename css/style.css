@@ -6,9 +6,7 @@
 }
 
 header {
-	/* Configuração de fundo */
-
-	height: 200px;
+	height: auto;
 	width: 100%;
 }
 
@@ -17,7 +15,7 @@ body {
 
 }
 
-section{
+#Receita{
 	margin-top: 5%;
 	margin-bottom: 5%;
 	width: 66%;
@@ -27,18 +25,21 @@ section{
 
 footer{
 	width: 100%;
-	height: 80px;
+	height: auto;
   text-align: center;
   background-color: #7bdda4;
   font-size: 16px;
   color: white;
   padding: 15px;
-  margin-top: 5%;
-  margin-bottom: 1%;
-
 }
 
-.wpp{
+iframe{
+  margin: 3%;
+  width: 80%;
+  height: 600px;
+}
+
+#wpp{
   margin-top: 3%;
   width: 30%;
   padding: 1em;
@@ -127,12 +128,13 @@ footer{
 
 .FotoReceita{
 	position: relative;
-
+  max-height: 400px;
+  max-width: 400px;
 }
 
 form {
   margin: 0 auto;
-  width: 30%;
+
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
@@ -168,12 +170,12 @@ button {
   height: 30px;
 }
 
-.container {
+#SliderShow {
   margin: 50px auto;
   width: 600px;
   height: 400px;
-  overflow: hidden;
-  position: relative;
+  flex: none;
+
 }
 
 .photo {
@@ -207,34 +209,28 @@ img:nth-child(4) {
   animation-delay: 0s;
 }
 
-#menu-h{
+#EnviarEmail{
+  margin-top: 3%;
+}
+
+#color{
   background-color: #7bdda4;
-  margin: 50px auto;
 }
 
-#menu-h ul {
-  max-width: 100%;
-  list-style: none;
-  padding: 0;
-}
-
-#menu-h ul li {
-  display: inline;
-}
-
-#menu-h ul li a {
+#color a{
+  width: 100%;
   color: #FFF;
   padding: 20px;
   display: inline-block;
   text-decoration: none;
   transition: background .4s;
-  width: 33%;
   text-align: center;
   font-size: 20px;
 }
 
-#menu-h ul li a:hover {
+#color a:hover{
   background-color: white;
+  width: 100%;
   color: #ea759e;
   font-size: 20px;
 }
