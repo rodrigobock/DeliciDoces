@@ -38,10 +38,10 @@ footer{
 }
 
 .wpp{
-  width: 50%;
-  height: auto;
-  text-align: center;
   margin-top: 3%;
+  width: 30%;
+  padding: 1em;
+  text-align: center; 
 }
 
 #p1{
@@ -227,7 +227,7 @@ img:nth-child(4) {
   display: inline-block;
   text-decoration: none;
   transition: background .4s;
-  width: 49%;
+  width: 33%;
   text-align: center;
   font-size: 20px;
 }
