@@ -11,9 +11,9 @@
     <script type="text/javascript">
         
       function sendMail() {
-        var link = "mailto:rodrigocabralbock@gmail.com" + "?cc=" +escape(document.getElementById('mail').value) + "&subject=" + escape("Contact") + "&body=" + escape(document.getElementById('msg').value);
+        var link = "mailto:rodrigocabralbock@gmail.com" + "?cc=" +escape(document.getElementById('mail').value) + "&subject=" + escape("Contato DeliciDoces") + "&body=" + escape(document.getElementById('msg').value);
 
-        window.location.href = link;
+         window.location.href = link;
 }
 
     </script>
@@ -46,7 +46,7 @@
     </nav>
 
 
-    <form method="post">
+    <form>
         <div>
             <label for="name">Nome:</label>
             <input type="text" id="name" />
@@ -60,7 +60,7 @@
             <textarea id="msg"></textarea>
         </div>
         <div>
-            <button type="submit" onclick="sendMail()">Enviar sua mensagem</button>
+            <button onclick="sendMail()">Enviar sua mensagem</button>
         </div>
     </form>
 
