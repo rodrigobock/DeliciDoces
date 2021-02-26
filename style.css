@@ -37,6 +37,13 @@ footer{
 
 }
 
+.wpp{
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
 #p1{
   text-align: justify;
   padding: 3%;
