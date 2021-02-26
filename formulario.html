@@ -8,6 +8,16 @@
 </head>
 <body>
 
+    <script type="text/javascript">
+        
+      function sendMail() {
+        var link = "mailto:rodrigocabralbock@gmail.com" + "?cc=" +escape(document.getElementById('mail').value) + "&subject=" + escape("Contact") + "&body=" + escape(document.getElementById('msg').value);
+
+        window.location.href = link;
+}
+
+    </script>
+
 	
     <header>
         <h1 id="titulo">DeliciDoces</h1>
@@ -36,7 +46,7 @@
     </nav>
 
 
-    <form action="/pagina-processa-dados-do-form" method="post">
+    <form method="post">
         <div>
             <label for="name">Nome:</label>
             <input type="text" id="name" />
@@ -50,7 +60,7 @@
             <textarea id="msg"></textarea>
         </div>
         <div>
-            <button type="submit">Enviar sua mensagem</button>
+            <button type="submit" onclick="sendMail()">Enviar sua mensagem</button>
         </div>
     </form>
 
