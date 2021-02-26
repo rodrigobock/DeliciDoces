@@ -1,10 +1,3 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Optima, sans-serif;
-}
-
 header {
 	height: auto;
 	width: 100%;
@@ -13,14 +6,6 @@ header {
 body {
 	background-color: white;
 
-}
-
-#Receita{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	width: 66%;
-	height: auto;
-	border: 10px solid #7bdda4;
 }
 
 footer{
@@ -88,12 +73,12 @@ iframe{
 }
 
 #listaIngredientes{
-	margin-left: 7%;
+	margin-left: 5%;
 }
 
 #Passos{
-	margin-left: 7%;
-	text-align: justify-all;
+	margin-left: 5%;
+	text-align: justify;
 }
 
 #esquerdo{
@@ -126,10 +111,8 @@ iframe{
  font-family: Optima, sans-serif;
 }
 
-.FotoReceita{
-	position: relative;
-  max-height: 400px;
-  max-width: 400px;
+#FotoReceita{
+  max-width: 600px;
 }
 
 form {
@@ -170,44 +153,6 @@ button {
   height: 30px;
 }
 
-#SliderShow {
-  margin: 50px auto;
-  width: 600px;
-  height: 400px;
-  flex: none;
-
-}
-
-.photo {
-  position: absolute;
-  animation: round 16s infinite;
-  opacity: 0;
-}
-
-@keyframes round {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-}
-
-img:nth-child(1) {
-  animation-delay: 12s;
-}
-
-img:nth-child(2) {
-  animation-delay: 8s;
-}
-
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-
-img:nth-child(4) {
-  animation-delay: 0s;
-}
 
 #EnviarEmail{
   margin-top: 3%;
@@ -234,3 +179,42 @@ img:nth-child(4) {
   color: #ea759e;
   font-size: 20px;
 }
+
+/* Div que envolve os slides */
+.caixa-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 3%;
+}
+
+/* Esconde as imagens inicialmente */
+.meus-slides {
+  display: none;
+}
+
+/* Elemento que envolve o número do slide */
+.numero-imagem {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Efeito suave para troca de slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
