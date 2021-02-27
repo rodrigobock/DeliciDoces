@@ -4,9 +4,11 @@
 
 	<title>Receitas</title>
 	<link rel="icon" href="img/favicon.ico">
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" lang="pt">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 </head>
 
@@ -16,11 +18,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1 id="titulo">DeliciDoces</h1>  
+					<h1 id="titulo"> {{message}} </h1>  
 				</div>
 				<div class="col-12">
-					<h2 id="sub">O melhor da confeitaria!</h2>			
-				</div>				
+					<h2 id="sub">{{message}}</h2>      
+				</div>        
 			</div>
 		</div>
 	</header>
@@ -49,9 +51,9 @@
 
 			<div class="col-12">
 
-				<h2 id="TituloReceita">Receita de Orelha de Gato</h2>
+				<h2 id="TituloReceita">{{message}}</h2>
 
-				<p id="Descricao">Este doce na verdade possui vários nomes pelo Brasil, pode ser chamado de Cueca Virada ou Calça virada, Orelha de gato e até Cavaquinho. </p>
+				<p id="Descricao">{{message}}</p>
 
 			</div>
 
@@ -71,59 +73,49 @@
 
 		<div class="row">
 
-			<div class="col-12">
+			<div id="listaIngredientes" class="col-12">
 
-
-				<h3 id="Ingredientes">Ingredientes: </h3>
+				<h3 id="Ingredientes">{{message}}</h3>
 
 				<ul>
-					<li id="listaIngredientes">4 Ovos</li>
-					<li id="listaIngredientes">8 colheres de sopa de açucar</li>
-					<li id="listaIngredientes">1 colher de sopa de margarina</li>
-					<li id="listaIngredientes">1 colher de chá de sal</li>
-					<li id="listaIngredientes">1 copo de leite</li>
-					<li id="listaIngredientes">1 colher de fermento rasa</li>
-					<li id="listaIngredientes">1 kg de trigo</li>
+					<li v-for="todo in todos">
+						{{ todo.text }}
+					</li>
 				</ul>
-
 			</div>
 
 		</div>
 
 		<div class="row">
 
-			<div class="col-12">
+			<div id="Passos" class="col-12">
 
-				<h3 id="Preparo">Modo de Preparo</h3>
+				<h3 id="Preparo">{{message}}</h3>
 
 				<ul>
-					<li id="Passos">Juntar todos os ingredientes e aos poucos adicionar o trigo até que a massa solte das mãos, mas cuidado para não deixar a massa muito dura.</li>
-					
-					<li id="Passos">Após esticar a massa com um rolo e recortar as orelhas de gato.</li>
-					
-					<li id="Passos">Fritar em fogo baixo</li>
-					
+					<li v-for="todo in todos">
+						{{ todo.text }}
+					</li>
 				</ul>
 
 			</div>
 
 		</div>
-
 	</div>				
-</div>
-</div>
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p>Site desenvolvido por Rodrigo Cabral Bock.</p>
-				<br>
-				<p>Fevereiro/2021</p>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p id="dev">{{message}}</p>
+					<p id="data">{{message}}</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="js\vueJS.js"></script>
 
 </body>
 </html>
