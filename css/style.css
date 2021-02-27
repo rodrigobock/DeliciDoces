@@ -246,3 +246,9 @@ textarea {
 .dark-mode #Preparo {
   color: white;
 }
+
+#BtnDarkMode{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
