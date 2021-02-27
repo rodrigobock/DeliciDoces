@@ -7,11 +7,11 @@ body {
 	background-color: white;
 }
 
-footer{
+#rodape{
 	width: 100%;
 	height: auto;
-  text-align: center;
   background-color: #7bdda4;
+  text-align: center;
   font-size: 16px;
   color: white;
   padding: 15px;
@@ -146,12 +146,10 @@ textarea {
   resize: vertical;
 }
 
-
-button {
+#SendMailBtn{
   width: 100%;
   height: 30px;
 }
-
 
 #EnviarEmail{
   margin-top: 3%;
@@ -213,3 +211,38 @@ button {
   from {opacity: .4} 
   to {opacity: 1}
 } 
+
+.dark-mode {
+  background-color: #15202B;
+  color: white;
+}
+
+.dark-mode #color{
+  background-color: #213345;
+}
+
+.dark-mode #color a:hover{
+  background-color: #3A5978;
+  color: white;
+}
+
+.dark-mode #rodape{
+  background-color: #080C10;
+  color: white;
+}
+
+.dark-mode #TituloReceita {
+  color: white;
+}
+
+.dark-mode #Descricao {
+  color: white;
+}
+
+.dark-mode #Ingredientes {
+  color: white;
+}
+
+.dark-mode #Preparo {
+  color: white;
+}

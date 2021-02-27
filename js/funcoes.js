@@ -22,3 +22,8 @@ function sendMail() {
 
   window.location.href = link;
 }
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}

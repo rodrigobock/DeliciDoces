@@ -15,16 +15,29 @@
 
 <body>
 
+	<div class="container">
+		<div class="row">
+			<div id="darkMode" class="col-12">
+				<p style="text-align: center; font-size: 22px; font-family: monospace;">Clique no botão para trocar entre o modo claro e o modo noturno <button onclick="myFunction()">Click me!</button></p>
+			</div>
+		</div>
+	</div>
+
 	<header>
 		<div class="container">
+
 			<div class="row">
 				<div class="col-12">
 					<h1 id="titulo"> {{message}} </h1>  
 				</div>
+			</div>
+
+			<div id="row">
 				<div class="col-12">
 					<h2 id="sub">{{message}}</h2>      
-				</div>        
+				</div>  
 			</div>
+
 		</div>
 	</header>
 
@@ -104,7 +117,7 @@
 		</div>
 	</div>				
 
-	<footer>
+	<footer id="rodape">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -117,6 +130,8 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="js\vueJS.js"></script>
+	<script src="js\funcoes.js"></script>
+
 
 </body>
 </html>
