@@ -8,7 +8,7 @@ var titulo = new Vue({
 var subtitulo = new Vue({
   el: '#sub',
   data: {
-    message: 'O melhor da confeitaria!'
+    message: 'Confeitaria Artesanal'
   }
 })
 
@@ -22,7 +22,7 @@ var Paragrafo1 = new Vue({
 var Paragrafo2 = new Vue({
   el: '#p2',
   data: {
-    message: 'E você? Está esperando o que para ser feliz?'
+    message: 'Cada bolo carrega um pedaço do nosso coração. Venha experimentar o sabor de quem faz com amor.'
   }
 })
 
@@ -97,6 +97,6 @@ var PassosPreparacao = new Vue({
 var msgWpp = new Vue({
   el: '#msgWpp',
   data: {
-    message: 'Caso tenha interesse em fazer um orçamento, entre em contato pelo nosso Whatsapp:'
+    message: 'Prefere falar diretamente? Nos chame no WhatsApp e faça seu pedido com mais rapidez!'
   }
 })
